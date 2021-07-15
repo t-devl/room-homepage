@@ -45,10 +45,10 @@ body {
 }
 
 .nav__toggle {
-  background: none;
-  border: none;
-  color: var(--white);
   padding: 0.1rem;
+  border: none;
+  background: none;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -58,10 +58,10 @@ body {
 
 .nav__list {
   display: none;
-  list-style: none;
-  text-transform: lowercase;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  text-transform: lowercase;
 }
 
 .nav--active .nav__list {
@@ -69,10 +69,10 @@ body {
 }
 
 .nav__link {
-  color: var(--black);
-  text-decoration: none;
-  font-weight: bold;
   margin: 0 1rem;
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .nav__item:last-of-type .nav__link {
