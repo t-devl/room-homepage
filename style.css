@@ -16,3 +16,15 @@
 body {
   font-family: "Spartan", sans-serif;
 }
+
+.header {
+  position: absolute;
+}
+
+.image-slider__image {
+  display: none;
+}
+
+.image-slider__image--active {
+  display: block;
+}
