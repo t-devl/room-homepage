@@ -14,11 +14,69 @@
 }
 
 body {
+  font-size: 12px;
   font-family: "Spartan", sans-serif;
 }
 
 .header {
+  display: flex;
+  align-items: center;
   position: absolute;
+  width: 100%;
+}
+
+.header__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  z-index: 10;
+}
+
+.nav--active {
+  background-color: var(--white);
+}
+
+.nav__toggle {
+  background: none;
+  border: none;
+  color: var(--white);
+  padding: 0.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle-icon {
+  display: block;
+}
+
+.nav__list {
+  display: none;
+  list-style: none;
+  text-transform: lowercase;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--active .nav__list {
+  display: flex;
+}
+
+.nav__link {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+.nav__item:last-of-type .nav__link {
+  margin-right: 0;
 }
 
 .image-slider__image {
