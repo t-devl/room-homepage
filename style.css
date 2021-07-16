@@ -36,7 +36,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.6rem;
   z-index: 10;
 }
 
@@ -84,13 +84,18 @@ body {
   display: none;
 }
 
+.image-slider__image,
+.about__image {
+  width: 100%;
+}
+
 .image-slider__image--active,
 .slide--active {
   display: block;
 }
 
 .text-slider {
-  padding: 4rem 1.5rem;
+  padding: 4rem 1.6rem;
 }
 
 .slide__title {
@@ -114,4 +119,20 @@ body {
 
 .slide__link-arrow {
   margin-left: 1rem;
+}
+
+.about__text {
+  padding: 3rem 1.6rem;
+}
+
+.about__title {
+  margin-bottom: 0.75rem;
+  font-size: 1em;
+  letter-spacing: 0.475em;
+  text-transform: uppercase;
+}
+
+.about__description {
+  color: var(--darkGrey);
+  line-height: 1.6;
 }
