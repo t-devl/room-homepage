@@ -79,10 +79,39 @@ body {
   margin-right: 0;
 }
 
-.image-slider__image {
+.image-slider__image,
+.slide {
   display: none;
 }
 
-.image-slider__image--active {
+.image-slider__image--active,
+.slide--active {
   display: block;
+}
+
+.text-slider {
+  padding: 4rem 1.5rem;
+}
+
+.slide__title {
+  margin-bottom: 1rem;
+  font-size: 2.2em;
+}
+
+.slide__description {
+  margin-bottom: 3rem;
+  color: var(--darkGrey);
+  line-height: 1.6;
+}
+
+.slide__link {
+  color: var(--black);
+  font-weight: 600;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.slide__link-arrow {
+  margin-left: 1rem;
 }
