@@ -94,7 +94,27 @@ body {
   display: block;
 }
 
+.slider-nav {
+  position: absolute;
+  top: -55px;
+  right: 0;
+  display: flex;
+}
+
+.slider-nav__button {
+  display: block;
+  padding: 1rem 1.2rem;
+  border: none;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.slider-nav__icon {
+  width: 80%;
+}
+
 .text-slider {
+  position: relative;
   padding: 4rem 1.6rem;
 }
 
@@ -169,7 +189,7 @@ body {
   .sliders-container {
     display: flex;
     height: 65vh;
-    min-height: 22rem;
+    min-height: 30rem;
   }
 
   .image-slider {
@@ -183,6 +203,22 @@ body {
   .image-slider__image {
     min-height: 65vh;
     object-fit: cover;
+  }
+
+  .slider-nav {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    display: flex;
+  }
+
+  .slider-nav__button {
+    padding: 1.75rem 2rem;
+  }
+
+  .slider-nav__image {
+    width: 100%;
   }
 
   .text-slider {
