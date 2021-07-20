@@ -69,10 +69,27 @@ body {
 }
 
 .nav__link {
+  position: relative;
   margin: 0 1rem;
   color: var(--black);
   font-weight: bold;
   text-decoration: none;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.1s linear;
+}
+
+.nav__link:hover::after {
+  left: 0;
+  width: 100%;
 }
 
 .nav__item:last-of-type .nav__link {
@@ -109,6 +126,10 @@ body {
   cursor: pointer;
 }
 
+.slider-nav__button:hover {
+  background-color: var(--veryDarkGrey);
+}
+
 .slider-nav__icon {
   width: 80%;
 }
@@ -135,6 +156,10 @@ body {
   letter-spacing: 1em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.slide__link:hover {
+  color: var(--darkGrey);
 }
 
 .slide__link-arrow {
