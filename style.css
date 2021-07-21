@@ -203,6 +203,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .background-overlay {
+    display: none;
+  }
+
   .header {
     padding: 2rem 4rem;
   }
@@ -214,6 +218,7 @@ body {
   .nav {
     padding: 2rem;
     margin-left: 0.5rem;
+    background-color: initial;
   }
 
   .nav__toggle {
