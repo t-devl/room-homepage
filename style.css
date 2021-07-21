@@ -112,6 +112,10 @@ body {
   margin-right: 0;
 }
 
+.image-slider__image {
+  height: 100%;
+}
+
 .image-slider__image,
 .slide {
   display: none;
@@ -230,7 +234,7 @@ body {
   .sliders-container {
     display: flex;
     height: 65vh;
-    min-height: 30rem;
+    min-height: 35rem;
   }
 
   .image-slider {
@@ -271,7 +275,7 @@ body {
 
   .slide__title {
     margin-bottom: 1rem;
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
 
   .slide__description {
@@ -313,7 +317,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1350px) {
   .text-slider {
     padding: 8rem 6rem;
   }
